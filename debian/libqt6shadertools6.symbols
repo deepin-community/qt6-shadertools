@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 6.2.1 amd64
+# SymbolsHelper-Confirmed: 6.4.2 amd64
 libQt6ShaderTools.so.6 libqt6shadertools6 #MINVER#
 * Build-Depends-Package: libqt6shadertools6-dev
  _ZN12QShaderBaker11setPreambleERK10QByteArray@Base 6.2.0
@@ -41,7 +41,7 @@ libQt6ShaderTools.so.6 libqt6shadertools6 #MINVER#
  _ZNK12QShaderBaker12errorMessageEv@Base 6.2.0
  _ZNK12QSpirvShader11spirvBinaryEv@Base 6.2.0
  _ZNK12QSpirvShader14translateToMSLEiP5QHashIiSt4pairIiiEE@Base 6.2.0
- _ZNK12QSpirvShader15translateToGLSLEi6QFlagsINS_8GlslFlagEE@Base 6.2.0
+ _ZNK12QSpirvShader15translateToGLSLEi6QFlagsINS_8GlslFlagEEP5QListINS_37SeparateToCombinedImageSamplerMappingEE@Base 6.4.2
  _ZNK12QSpirvShader15translateToHLSLEiP5QHashIiSt4pairIiiEE@Base 6.2.0
  _ZNK12QSpirvShader17shaderDescriptionEv@Base 6.2.0
  _ZNK12QSpirvShader19remappedSpirvBinaryE6QFlagsINS_9RemapFlagEEP7QString@Base 6.2.0

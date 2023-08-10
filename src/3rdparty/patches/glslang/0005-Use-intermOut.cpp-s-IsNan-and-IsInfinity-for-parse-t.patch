@@ -1,4 +1,4 @@
-From 1c28979226b8bb5a61bcbfa9b2c1963072bc7df4 Mon Sep 17 00:00:00 2001
+From 7282f8b715bfa2622eb9663f917f639a73e5d102 Mon Sep 17 00:00:00 2001
 From: Marius Hillenbrand <mhillen@linux.ibm.com>
 Date: Tue, 9 Nov 2021 16:31:22 +0100
 Subject: [PATCH 3/3] Use intermOut.cpp's IsNan and IsInfinity for parse-time
@@ -28,7 +28,7 @@ index 115f6f7..5b2dae6 100644
 --- a/src/3rdparty/glslang/glslang/Include/Common.h
 +++ b/src/3rdparty/glslang/glslang/Include/Common.h
 @@ -39,6 +39,11 @@
-
+ 
  #include <algorithm>
  #include <cassert>
 +#ifdef _MSC_VER
@@ -42,7 +42,7 @@ index 115f6f7..5b2dae6 100644
 @@ -288,6 +293,35 @@ template <class T> bool IsMultipleOfPow2(T number, int powerOf2)
      return ! (number & (powerOf2 - 1));
  }
-
+ 
 +inline bool IsInfinity(double x) {
 +#ifdef _MSC_VER
 +    switch (_fpclass(x)) {
@@ -74,7 +74,7 @@ index 115f6f7..5b2dae6 100644
 +
  } // end namespace glslang
  } // namespace QtShaderTools
-
+ 
 diff --git a/src/3rdparty/glslang/glslang/MachineIndependent/Constant.cpp b/src/3rdparty/glslang/glslang/MachineIndependent/Constant.cpp
 index 23c511e..1b23d68 100644
 --- a/src/3rdparty/glslang/glslang/MachineIndependent/Constant.cpp
@@ -82,7 +82,7 @@ index 23c511e..1b23d68 100644
 @@ -46,35 +46,6 @@ namespace {
  using namespace QtShaderTools;
  using namespace glslang;
-
+ 
 -typedef union {
 -    double d;
 -    int i[2];
@@ -113,10 +113,10 @@ index 23c511e..1b23d68 100644
 -}
 -
  const double pi = 3.1415926535897932384626433832795;
-
+ 
  } // end anonymous namespace
 @@ -664,12 +635,12 @@ TIntermTyped* TIntermConstantUnion::fold(TOperator op, const TType& returnType)
-
+ 
          case EOpIsNan:
          {
 -            newConstArray[i].setBConst(isNan(unionArray[i].getDConst()));
@@ -129,7 +129,7 @@ index 23c511e..1b23d68 100644
 +            newConstArray[i].setBConst(IsInfinity(unionArray[i].getDConst()));
              break;
          }
-
+ 
 diff --git a/src/3rdparty/glslang/glslang/MachineIndependent/intermOut.cpp b/src/3rdparty/glslang/glslang/MachineIndependent/intermOut.cpp
 index e07cdfe..9478fd5 100644
 --- a/src/3rdparty/glslang/glslang/MachineIndependent/intermOut.cpp
@@ -137,7 +137,7 @@ index e07cdfe..9478fd5 100644
 @@ -48,37 +48,6 @@
  #endif
  #include <cstdint>
-
+ 
 -namespace {
 -
 -bool IsInfinity(double x) {
@@ -169,8 +169,9 @@ index e07cdfe..9478fd5 100644
 -}
 -
 -}
-
+ 
  namespace QtShaderTools {
+ 
+-- 
+2.35.1
 
---
-2.34.1

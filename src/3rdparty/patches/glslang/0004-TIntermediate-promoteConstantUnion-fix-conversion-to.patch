@@ -1,4 +1,4 @@
-From 75e3ed99c61b1d201498b5a7fbb6498f902344e0 Mon Sep 17 00:00:00 2001
+From 1d5124efb3bc7173ec6f9961a865f2e167f5198f Mon Sep 17 00:00:00 2001
 From: Marius Hillenbrand <mhillen@linux.ibm.com>
 Date: Wed, 10 Nov 2021 18:10:58 +0100
 Subject: [PATCH 2/3] TIntermediate::promoteConstantUnion(): fix conversion to
@@ -28,5 +28,6 @@ index 84b4c55..89538ea 100644
          case EbtInt16: PROMOTE(setI16Const, short, Get); break; \
          case EbtInt: PROMOTE(setIConst, int, Get); break; \
          case EbtInt64: PROMOTE(setI64Const, long long, Get); break; \
---
-2.34.1
+-- 
+2.35.1
+

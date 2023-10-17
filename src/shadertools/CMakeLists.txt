@@ -1,3 +1,6 @@
+# Copyright (C) 2022 The Qt Company Ltd.
+# SPDX-License-Identifier: BSD-3-Clause
+
 # Generated from shadertools.pro.
 
 #####################################################################
@@ -7,12 +10,13 @@
 qt_internal_add_module(ShaderTools
     EXCEPTIONS
     SOURCES
-        qshaderbaker.cpp qshaderbaker_p.h
-        qshaderbatchablerewriter.cpp qshaderbatchablerewriter_p.h
+        qshaderbaker.cpp qshaderbaker.h
+        qshaderrewriter.cpp qshaderrewriter_p.h
         qspirvcompiler.cpp qspirvcompiler_p.h
         qspirvshader.cpp qspirvshader_p.h
         qspirvshaderremap.cpp qspirvshaderremap_p.h
         qtshadertoolsglobal.h
+        qtshadertoolsglobal_p.h
     DEFINES
         QT_BUILD_SHADERTOOLS_LIB
     INCLUDE_DIRECTORIES
@@ -34,6 +38,8 @@ qt_internal_add_module(ShaderTools
         Qt::GuiPrivate
     GENERATE_CPP_EXPORTS
     GENERATE_PRIVATE_CPP_EXPORTS
+    RHI_HEADER_FILTERS
+        "(^|/)qshaderbaker\\.h$"
 )
 
 ## Scopes:

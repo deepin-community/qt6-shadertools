@@ -1,3 +1,21 @@
+qt6-shadertools (6.6.0-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Add virtual package qt6-shadertools-private-abi.
+  * Use the (symver) directive to catch all private symbols.
+
+ -- Patrick Franz <deltaone@debian.org>  Sat, 14 Oct 2023 00:45:42 +0200
+
+qt6-shadertools (6.6.0-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.6.0).
+  * Bump Qt B-Ds to 6.6.0.
+  * Update list of installed files.
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Wed, 11 Oct 2023 21:58:36 +0200
+
 qt6-shadertools (6.4.2-3) unstable; urgency=medium
 
   * Team upload.

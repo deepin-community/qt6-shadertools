@@ -1,4 +1,5 @@
 usr/include/${DEB_HOST_MULTIARCH}/qt6/QtShaderTools/6.*/QtShaderTools/private/*.h
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtShaderTools/6.*/QtShaderTools/rhi/*.h
 usr/include/${DEB_HOST_MULTIARCH}/qt6/QtShaderTools/QtShaderTools
 usr/include/${DEB_HOST_MULTIARCH}/qt6/QtShaderTools/QtShaderToolsDepends
 usr/include/${DEB_HOST_MULTIARCH}/qt6/QtShaderTools/QtShaderToolsVersion
@@ -25,8 +26,8 @@ usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderToolsTools/Qt6ShaderToolsToolsTarge
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderToolsTools/Qt6ShaderToolsToolsVersionlessTargets.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/libQt6ShaderTools.prl
 usr/lib/${DEB_HOST_MULTIARCH}/libQt6ShaderTools.so
-usr/lib/${DEB_HOST_MULTIARCH}/metatypes/qt6shadertools_none_metatypes.json
 usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt6ShaderTools.pc
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/metatypes/qt6shadertools_none_metatypes.json
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_shadertools.pri
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_shadertools_private.pri
-usr/share/qt6/modules/ShaderTools.json
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/modules/ShaderTools.json

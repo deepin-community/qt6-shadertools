@@ -5,6 +5,7 @@
     \page qtshadertools-overview.html
     \title Qt Shader Tools Overview
     \brief Provides insight into the Qt Shader Tools module.
+    \ingroup explanation
 
     The Qt Shader Tools module builds on the SPIR-V Open Source Ecosystem as
     described at \l{https://www.khronos.org/spir/}{the Khronos SPIR-V web site}.
@@ -66,10 +67,6 @@
     \li QShaderBaker (part of this module, the library equivalent of the \c qsb
     tool)
     \endlist
-
-    \note As of Qt \QtVer, the C++ APIs are considered private. They are not
-    recommended for direct usage from applications. Rather, use the \c qsb
-    command-line tool either directly, or indirectly from CMake projects.
 
     \section1 Typical Usage with Qt Quick
 

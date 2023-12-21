@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 6.6.0 amd64
-libQt6ShaderTools.so.6 libqt6shadertools6 #MINVER#, qt6-shadertools-private-abi (= 6.6.0)
+libQt6ShaderTools.so.6 libqt6shadertools6 #MINVER#, qt6-shadertools-private-abi (= 6.6.1)
 * Build-Depends-Package: qt6-shadertools-dev
  Qt_6@Qt_6 6.6.0
  (symver)Qt_6_PRIVATE_API 0

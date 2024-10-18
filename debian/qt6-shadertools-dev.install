@@ -14,6 +14,7 @@ usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderTools/Qt6ShaderToolsConfigVersionIm
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderTools/Qt6ShaderToolsDependencies.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderTools/Qt6ShaderToolsTargets-none.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderTools/Qt6ShaderToolsTargets.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderTools/Qt6ShaderToolsVersionlessAliasTargets.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderTools/Qt6ShaderToolsVersionlessTargets.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderToolsTools/Qt6ShaderToolsMacros.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6ShaderToolsTools/Qt6ShaderToolsToolsAdditionalTargetInfo.cmake

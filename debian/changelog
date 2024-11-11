@@ -1,4 +1,4 @@
-qt6-shadertools (6.8.0-0deepin1) UNRELEASED; urgency=medium
+qt6-shadertools (6.8.0-0deepin1) unstable; urgency=medium
 
   * New upstream release (6.8.0).
   * Bump Qt B-Ds to 6.8.0.
